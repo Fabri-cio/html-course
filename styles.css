@@ -1,0 +1,7 @@
+p {
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1cm;
+  padding: 20px; /*espacio entre el texto y el borde*/
+  margin: 100px; /*espacion fuera del borde */
+}

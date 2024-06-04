@@ -1,0 +1,181 @@
+<!-- los enlaces nos permiten hacer click para pasar de una pagina a otra -->
+<!-- los enlaces html son hipervinculos(referencia unidireccinal en un documento electronico) -->
+<!-- un enlace no visitado esta subrayado de azul
+    un enlace visitado esta subrayado y de color violeta
+    un enlace activo esta subrayado y en rojo
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #enlace:link {
+        color: rgb(242, 245, 237);
+        background-color: blueviolet;
+        font-size: 1cm;
+        text-decoration: none;
+      }
+      #enlace:visited {
+        color: greenyellow;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      #enlace:hover {
+        color: aquamarine;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      #enlace:active {
+        color: blue;
+        background-color: transparent;
+        text-decoration: wavy;
+      }
+      #btn:link,
+      #btn:visited {
+        background-color: red;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border: 10px solid rgb(95, 10, 10);
+      }
+      #btn:hover,
+      #btn:active {
+        background-color: rgb(226, 100, 100);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- estas son url relativas -->
+    <a href="/10css.html" target="_self"
+      >por defecto. Abre el documento en la misma ventana/pestaña en la que se
+      hizo click</a
+    >
+    <br />
+
+    <a href="/4parrafos.html" target="_blank"
+      >abre el docuemtno en una nueva ventana o pestaña</a
+    >
+    <br />
+
+    <a href="/5estilos.html" target="_parent"
+      >abre el documento en el marco pricipal</a
+    >
+    <br />
+
+    <a href="/9colores.html" target="_top"
+      >abre el documento en el cuerpo completo de la ventana</a
+    >
+    <br />
+
+    <!-- estas son urls absolutas -->
+    <a href="https://www.youtube.com/" target="_top">
+      <img
+        src="https://media.es.wired.com/photos/650b2a2e72d73ca3bd5ef0cc/16:9/w_2560%2Cc_limit/Business-OpenAI-Dall-E-3-heart.jpg"
+        alt="esta es una imagen de internet"
+        title="haz click para abrir youtube"
+        width="100px"
+        ,
+        height="50px"
+      />esta es una imagen como enlace (link)
+    </a>
+    <br />
+
+    <a href="mailto:wil.fabri777@gmail.com"
+      >enlace de direccion de correo electronico con mailto:</a
+    >
+    <br />
+
+    <button onclick="document.location= '10css.asp'">boton como enlace</button>
+    <br />
+
+    <a id="enlace" href="https://www.youtube.com/" target="_blank"
+      >enlace cambiado con css interno</a
+    >
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <a id="btn" href="https://www.youtube.com/" target="_blank"
+      >Boton con enlace</a
+    >
+    <br />
+    <br /><br /><br />
+
+    <!-- marcadores -->
+    <a href="#c1">Saltar al capitulo 1</a><br />
+    <a href="#c5">Saltar al capitulo 5</a><br />
+    <a href="#c10">Saltar al capitulo 10</a><br />
+    <a href="#c8">Saltar al capitulo 8</a><br />
+
+    <h2 id="c1">capitulo 1</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 2</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 3</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 4</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2 id="c5">capitulo 5</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 6</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 7</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2 id="c8">capitulo 8</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2>capitulo 9</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+    <h2 id="c10">capitulo 10</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic corrupti
+      similique, quisquam iure explicabo amet. Provident soluta possimus modi
+      tempore ab, labore accusamus dolore nisi deserunt maxime itaque.
+      Veritatis, illo!
+    </p>
+  </body>
+</html>
