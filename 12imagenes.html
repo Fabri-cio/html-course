@@ -1,0 +1,114 @@
+<!-- las imagenes no se insertan en la pagina web. Las imagenes estan vinculadas a paginas web -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 3. imagenes de fondo -->
+    <style>
+      body {
+        background-image: url("https://www.mitsubishi-motors.com.pe/blog/wp-content/uploads/2020/06/auto-hatchbak-ventajas-mitsubishi.jpg");
+
+        /* para que no se repita la imagen */
+        /* background-repeat: no-repeat; */
+
+        /* portada de fondo no se ajusta al tamaño de la ventana pero si se estira */
+        /* background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; */
+
+        /* estiramiento de fondo se ajusta al tamaño de la ventana */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>1. img es una etiqueta vacia</p>
+    <p>
+      se puede meter imagenes al constado del texto con float Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Itaque similique aliquam nesciunt
+      ratione illum adipisci, rem optio minima consectetur ducimus sed alias ex
+      id, facere obcaecati. Perferendis culpa itaque labore Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. At voluptatibus, aliquam magni
+      deserunt, sit necessitatibus qui molestiae perferendis provident ad ullam
+      facilis eos placeat vero odio minus id harum impedit? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Maiores mollitia cum non possimus
+      obcaecati earum, unde magni ex dolorum sunt aperiam porro, deleniti
+      consectetur recusandae. In aspernatur atque beatae molestiae.<img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVlmWueUsfk-7eDhFEOyKZAUkQVLj2fpWqSw&s"
+        alt="es una imagen de sudafrica al atardacer"
+        width="200"
+        height="100"
+        style="float: right"
+      />
+    </p>
+    <br /><br /><br />
+    <p>src es la url de la imagen</p>
+
+    <p>2. apas de imagenes con el elemnto map</p>
+    <img
+      src="https://i.pinimg.com/564x/43/f4/8b/43f48bf32f93f7c7dc56843fb6a1ffed.jpg"
+      alt="esta es una imagen con objetos"
+      usemap="#image"
+      width="500"
+      height="400"
+    />
+    <map name="image">
+      <area
+        shape="rect"
+        coords="34, 44, 170, 150"
+        href="/12imagenes.html"
+        alt=""
+        title="esto es un cuadrado"
+      />
+      <area
+        shape="circle"
+        coords="337, 300, 44"
+        href=""
+        alt=""
+        title="esto es un circulo"
+      />
+      <area
+        shape="poly"
+        coords="58,352,37,322,140,239,85,255"
+        href=""
+        alt=""
+        title="esto forma un poligono"
+        onclick="alerta()"
+      />
+    </map>
+
+    <!-- 4. el elemnto de imagen picture -->
+    <picture>
+      <source
+        media="(min-width:690px)"
+        srcset="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw3KynmFYIY0ChteoC2JouxrFo8FoPpY-8eA&s
+        "
+      />
+      <source
+        media="(min-width:680px)"
+        srcset="https://akamai.sscdn.co/letras/360x360/albuns/4/e/4/8/16990.jpg"
+      />
+      <source
+        media="(min-width:620px)"
+        srcset="
+          https://akamai.sscdn.co/letras/360x360/albuns/d/3/4/e/169861657831008.jpg
+        "
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/71nx4Bse-zL._UF1000,1000_QL80_.jpg"
+        alt=""
+        width="800"
+        height="700"
+      />
+    </picture>
+
+    <script>
+      function alerta() {
+        alert("esta es la alerta");
+      }
+    </script>
+  </body>
+</html>
