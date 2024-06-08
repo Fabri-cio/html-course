@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        /* para dar bordes a todos los elementos nora border si o si quiere tres parametros */
+        border: 5px solid black;
+
+        /* 2 para evitar tener bordes dobles como el anterior */
+        /* border-collapse: collapse; */
+
+        /* estilos para las filas 
+         th,
+        td {
+          /* background-color: aquamarine; 
+
+          esto funciona solo si esta solo 
+           border-radius: 10px; 
+
+           border-style: dotted; 
+        } */
+
+        /* para poner un estilo de borde redondo */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+      </tr>
+      <tr>
+        <td>William</td>
+        <td>Vargas</td>
+        <td>31 años</td>
+        <td>Masculino</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- tamaños de tabla -->
+    <table style="width: 100%">
+      <tr>
+        <th>Nombre</th>
+        <th style="width: 40%">Apellido</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+      </tr>
+      <tr style="height: 200px">
+        <td>William</td>
+        <td>Vargas</td>
+        <td>31 años</td>
+        <td>Masculino</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- encabezado de la tabla -->
+    <table>
+      <caption>
+        Este es el titulo de la tabla
+      </caption>
+      <tr>
+        <th>Nombre</th>
+        <td>William</td>
+        <td>Alejandra</td>
+      </tr>
+      <tr>
+        <th>Apellido</th>
+        <td>Vargas</td>
+        <td>Cruz</td>
+      </tr>
+    </table>
+    <br />
+
+    <table style="width: 100%">
+      <caption>
+        Este es el titulo de la tabla
+      </caption>
+      <tr style="text-align: center">
+        <th colspan="2">Nombre</th>
+        <td>William</td>
+        <td>Alejandra</td>
+      </tr>
+      <tr>
+        <th colspan="4">Apellido</th>
+        <td>Vargas</td>
+        <td>Cruz</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- padding y border-spacing -->
+    <table style="border-spacing: 15px">
+      <caption>
+        Este es el titulo de la tabla
+      </caption>
+      <tr>
+        <th style="padding: 15px 2px 4px 10px">Nombre</th>
+        <td>William</td>
+        <td>Alejandra</td>
+      </tr>
+      <tr>
+        <th>Apellido</th>
+        <td>Vargas</td>
+        <td>Cruz</td>
+      </tr>
+    </table>
+    <br />
+
+    <table >
+      <caption>
+        Este es el titulo de la tabla
+      </caption>
+      <tr>
+        <th style="padding: 15px 2px 4px 10px">Nombre</th>
+        <td>William</td>
+        <td>Alejandra</td>
+      </tr>
+      <tr>
+        <th>Apellido</th>
+        <td>Vargas</td>
+        <td>Cruz</td>
+      </tr>
+    </table>
+  </body>
+</html>
