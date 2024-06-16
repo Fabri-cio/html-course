@@ -6,23 +6,34 @@
       th,
       td {
         /* para dar bordes a todos los elementos nora border si o si quiere tres parametros */
-        border: 5px solid black;
+        border: solid black;
 
         /* 2 para evitar tener bordes dobles como el anterior */
-        /* border-collapse: collapse; */
+        border-collapse: collapse;
 
-        /* estilos para las filas 
+        /* estilos para las filas
          th,
         td {
-          /* background-color: aquamarine; 
+          /* background-color: aquamarine;
 
-          esto funciona solo si esta solo 
-           border-radius: 10px; 
+          esto funciona solo si esta solo
+           border-radius: 10px;
 
-           border-style: dotted; 
+           border-style: dotted;
         } */
 
         /* para poner un estilo de borde redondo */
+
+        /* estilos */
+        /* .estilo:nth-child(even) {
+          background-color: cadetblue;
+        } */
+
+        /* pintar por columnas */
+        /* td:nth-child(even),
+        th:nth-child(even) {
+          background-color: red;
+        } */
       }
     </style>
   </head>
@@ -113,7 +124,7 @@
     </table>
     <br />
 
-    <table >
+    <table>
       <caption>
         Este es el titulo de la tabla
       </caption>
@@ -126,6 +137,127 @@
         <th>Apellido</th>
         <td>Vargas</td>
         <td>Cruz</td>
+      </tr>
+    </table>
+    <br />
+    <!-- colspan  -->
+    <table style="border-collapse: collapse">
+      <tr>
+        <th colspan="2">Nombres</th>
+        <th>Edades</th>
+      </tr>
+      <tr>
+        <td>William</td>
+        <td>Tito</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>Alejandra</td>
+        <td>Parraga</td>
+        <td>28</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- rowspan -->
+    <table style="border-collapse: collapse">
+      <tr>
+        <th rowspan="2">Fechas</th>
+        <th>Dia</th>
+        <th>Noche</th>
+      </tr>
+      <tr>
+        <td>si</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <th>observacion</th>
+        <td>no</td>
+        <td>no</td>
+      </tr>
+    </table>
+    <br /><br />
+
+    <!-- estilo de tabla -->
+    <table>
+      <tr class="estilo">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr class="estilo">
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr class="estilo">
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+      <tr class="estilo">
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+      <tr class="estilo">
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+      </tr>
+    </table>
+    <br /><br />
+    <!-- colgroup -->
+    <table>
+      <colgroup>
+        <col
+          span="2"
+          style="width: 300px; background-color: aqua; border: 2px solid black"
+        />
+        <col
+          span="2"
+          style="
+            width: 300px;
+            background-color: red;
+            border: 2px solid black;
+            visibility: collapse;
+          "
+        />
+      </colgroup>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
       </tr>
     </table>
   </body>

@@ -1,0 +1,47 @@
+<!-- El <head>elemento es un contenedor de metadatos (datos sobre datos)
+    El <head>elemento se coloca entre la <html>etiqueta y la <body>etiqueta.
+    El <title>elemento es obligatorio y define el título del documento.
+    El <style>elemento se utiliza para definir información de estilo para un solo documento.
+    La <link> etiqueta se utiliza con mayor frecuencia para vincular a hojas de estilo externas.
+    El <meta>elemento se utiliza normalmente para especificar el conjunto de caracteres, la descripción de la página, las palabras clave, el autor del documento y la configuración de la ventana gráfica.
+    El <script>elemento se utiliza para definir JavaScripts del lado del cliente.
+    El <base>elemento especifica la URL base y/o el destino para todas las URL relativas en una página -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Muestra un título para la página en los resultados del motor de búsqueda. -->
+    <title>Este es el titulo</title>
+    <!-- imformcacion de estilo  -->
+    <style>
+      p {
+        color: aqua;
+      }
+    </style>
+    <!-- la relacion entre el documento actual y un recurso-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Defina el juego de caracteres utilizado: -->
+    <meta charset="UTF-8" />
+    <!-- Definir palabras clave para motores de búsqueda: -->
+    <meta name="keywords" content="Html,css,javascript" />
+    <!-- Defina una descripción de su página web: -->
+    <meta name="description" content="curso de html" />
+    <!-- Definir el autor de una página: -->
+    <meta name="author" content="William" />
+    <!-- Actualizar el documento cada 30 segundos: -->
+    <meta http-equiv="refresh" content="30" />
+    <!-- Cómo configurar la ventana gráfica para que su sitio web se vea bien en todos los dispositivos: -->
+    <!-- La width=device-widthparte establece el ancho de la página para seguir el
+    ancho de la pantalla del dispositivo (que variará según el dispositivo). -->
+    <!-- La initial-scale=1.0parte establece el nivel de zoom inicial cuando el navegador carga la página por primera vez. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- script -->
+    <script></script>
+
+    <!-- base -->
+    <base href="/24head.html" target="_blank" />
+  </head>
+  <body>
+    <p>esto es un parrafo</p>
+  </body>
+</html>

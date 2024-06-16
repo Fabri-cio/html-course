@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Float</title>
+    <style>
+      * {
+        /* modelo de caja */
+        /* Cuando utilizas box-sizing: border-box, el ancho y alto que defines para un elemento incluyen el contenido, el padding (relleno) y el border (borde). Esto significa que el tamaño total del elemento no se verá afectado por el padding o el border, lo cual puede simplificar el diseño y evitar cálculos adicionales. */
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: #666;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background-color: #ccc;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+      }
+
+      /* borrar flotadores despues de las columnas */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Diseño responsivo: hace que las dos columnas/cuadros se apilen uno encima del otro en lugar de uno al lado del otro, en pantallas pequeñas */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Layout Flexbox</h2>
+    <p>
+      In this example, we have created a header, two columns/boxes and a footer.
+      On smaller screens, the columns will stack on top of each other.
+    </p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <header><h2>Ciudades</h2></header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">La Paz</a></li>
+          <li><a href="#">Cochabamba</a></li>
+          <li><a href="#">Santa Cruz</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>La Paz</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius alias
+          repellat obcaecati beatae placeat! Fugiat vitae dignissimos assumenda
+          tempora numquam quidem, exercitationem optio asperiores quos porro
+          fugit hic tenetur ut. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Praesentium at placeat libero ipsum nam quidem
+          repellat facere perspiciatis ea deserunt autem magnam, mollitia
+          expedita adipisci a itaque reprehenderit est possimus. Illum quis
+          suscipit quas incidunt! Debitis iure voluptate optio tempora?
+          Provident aperiam sapiente perspiciatis cupiditate culpa in, hic
+          nostrum quae perferendis quidem qui quam neque commodi earum aliquid
+          voluptates tenetur? Suscipit rem vero in maxime sed quos dolore at
+          optio excepturi placeat aspernatur quisquam, inventore, atque fuga
+          expedita pariatur. Similique incidunt expedita molestias adipisci
+          repellendus dignissimos, nisi cumque dolores reprehenderit? Corrupti
+          voluptatum alias dolores, deserunt earum, dolore quos explicabo animi
+          pariatur, nostrum vero odio nobis iusto labore dolorum quis ut
+          accusantium voluptates dolorem ipsa dicta rem veniam. Commodi, sit
+          libero. Fugit in blanditiis voluptates dolore esse minus, autem veniam
+          quia quod maxime impedit, voluptas et ad obcaecati rem ipsa nam odit.
+          Quos repellat enim dignissimos debitis omnis libero voluptas odio!
+          Incidunt quam minima deserunt ipsum blanditiis, aliquid provident ad,
+          ipsam nihil impedit, maiores illum nulla quasi accusantium in
+          distinctio. Aut cumque perspiciatis magni non eum sed cum, maiores
+          repudiandae quisquam! Consectetur illum nulla odit voluptatum iure
+          expedita aspernatur! Distinctio at in expedita reprehenderit explicabo
+          temporibus excepturi libero dolor sit soluta ex quis, unde ipsam optio
+          ut? Debitis praesentium labore et! Facilis debitis dolores fugiat
+          tempora explicabo porro, exercitationem, atque tenetur rerum,
+          excepturi dolorem accusantium a iste sint corporis pariatur earum
+          doloremque consectetur? Culpa alias perspiciatis, modi saepe officia
+          optio eos. Reiciendis dolores ipsam officiis minima? Esse libero
+          asperiores, nobis animi reiciendis provident quod laboriosam aliquam,
+          sapiente incidunt vero! Doloribus magni saepe alias explicabo.
+          Blanditiis vitae quae ipsum, numquam aperiam distinctio! Sint,
+          cupiditate! Quam dolor esse maxime quia. Mollitia placeat porro
+          similique. Eum fugiat soluta dolorem modi doloribus natus, odit
+          provident voluptas eos quibusdam maiores! Porro quam expedita dicta
+          assumenda sed. Hic doloribus facere dolorum recusandae neque, laborum
+          libero quos odit magni nostrum ad perferendis maxime, minima ipsam
+          inventore suscipit porro fugiat accusamus nesciunt voluptatum animi
+          explicabo delectus vel. Mollitia, veritatis. Praesentium id illo
+          officia sunt ratione temporibus laborum asperiores, mollitia
+          consequuntur impedit labore qui repellendus voluptatum! Natus vero
+          odio maxime blanditiis velit mollitia fuga explicabo possimus hic,
+          architecto dignissimos iure? Corporis natus minus in repudiandae,
+          quis, nisi architecto iste inventore laboriosam quam assumenda,
+          possimus autem libero? Incidunt facere iste, similique soluta
+          reiciendis nostrum distinctio nemo, hic animi placeat aspernatur
+          architecto. Enim dignissimos doloribus quam, dolores quas, est
+          repellendus minima magni facere dolore, exercitationem pariatur autem
+          nisi consectetur corporis. Fugiat perspiciatis at quisquam odit
+          consectetur tenetur adipisci aperiam perferendis harum voluptate.
+          Cumque, vero magni facilis reprehenderit dolores impedit sint
+          quibusdam ut, rem aut corrupti labore molestias aliquam debitis nulla
+          porro, architecto nostrum. Perspiciatis, fugit repellat reprehenderit
+          aliquam sit quo est sunt. Et dolores alias rem enim, vero eius
+          quaerat. Similique possimus eaque accusantium quibusdam nisi provident
+          dicta culpa asperiores at, quae aliquid id necessitatibus blanditiis
+          voluptatem porro temporibus excepturi explicabo omnis. Sunt maxime
+          pariatur quas doloribus eum quos, consectetur possimus impedit
+          accusamus. Ex nam a provident perferendis animi, ut voluptates aperiam
+          facilis obcaecati minus totam nulla in voluptatum, magni hic. Omnis!
+          Explicabo iure consectetur magni voluptates aliquid debitis excepturi
+          asperiores iste sit et, voluptas, quisquam quaerat ipsa, fuga ullam
+          nulla! Dignissimos excepturi reiciendis quam dolorem facilis numquam
+          minus quibusdam nam voluptatem. Odio voluptate autem cupiditate
+          provident odit esse praesentium? Assumenda pariatur vel quod
+          consectetur numquam accusamus tempore corporis, nesciunt dolore
+          dolorem? Aperiam impedit accusantium inventore enim a eligendi rerum
+          unde! Est. Mollitia error earum natus repudiandae culpa dicta
+          blanditiis commodi veniam corporis quo. Praesentium sunt, placeat,
+          sint, deleniti enim natus debitis alias voluptas dolore in error!
+          Repellendus ipsa perferendis inventore necessitatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, minus
+          ducimus ipsam aliquid doloremque accusamus? Ea facilis, nobis
+          blanditiis id eos dolore nisi illum? Libero ipsam quaerat impedit ex
+          voluptatibus.
+        </p>
+      </article>
+    </section>
+
+    <footer><p>Footer</p></footer>
+  </body>
+</html>

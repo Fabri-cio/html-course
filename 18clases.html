@@ -1,0 +1,40 @@
+<!-- El atributo HTML classespecifica uno o más nombres de clase para un elemento CSS
+y JavaScript utilizan clases para seleccionar y acceder a elementos específicos.
+El classatributo se puede utilizar en cualquier elemento HTML. El nombre de la
+clase distingue entre mayúsculas y minúsculas. Diferentes elementos HTML pueden
+apuntar al mismo nombre de clase JavaScript puede acceder a elementos con un
+nombre de clase específico con el getElementsByClassName() método -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .city {
+        background-color: aqua;
+      }
+      .tamaño {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="city tamaño">
+      <h1>La Paz</h1>
+    </div>
+    <div class="city">
+      <h1>Cochabamba</h1>
+    </div>
+    <div class="city">
+      <h1>Santa Cruz</h1>
+    </div>
+
+    <p class="city tamaño">Esto es un parrafo que la clase afecta</p>
+
+    <div class="color">este es un div modificado por javaScript</div>
+    <script>
+      document.getElementsByClassName("color")[0].style.backgroundColor = "red";
+      document.getElementsByClassName("color")[0].style.color = "white";
+      document.getElementsByClassName("color")[0].style.width = "30%";
+      document.getElementsByClassName("color")[0].style.margin = "auto";
+    </script>
+  </body>
+</html>

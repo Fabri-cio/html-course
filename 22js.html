@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="estilo">
+      <p>estilo cambiado por javascript</p>
+    </div>
+    <script>
+      function cambiarEstilo() {
+        document.getElementById("estilo").style.backgroundColor = "blue";
+        document.getElementById("estilo").style.color = "white";
+        document.getElementById("estilo").style.width = "30%";
+        document.getElementById("estilo").style.margin = "auto";
+        document.getElementById("estilo").style.fontSize = "30px";
+        document.getElementById("estilo").innerHTML = "cambia de contenido";
+        document.getElementById("estilo").title = "esto cambio";
+      }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <button type="button" onclick="cambiarEstilo()">Cambiar Estilo</button>
+  </body>
+</html>

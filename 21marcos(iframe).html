@@ -1,0 +1,24 @@
+<!-- La etiqueta HTML <iframe>especifica un marco en línea.
+    El src atributo define la URL de la página a incrustar.
+    Incluya siempre un titleatributo (para lectores de pantalla)
+    Los atributos heighty widthespecifican el tamaño del iframe.
+    Úselo border:none;para eliminar el borde alrededor del iframe -->
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <iframe
+      style="border: none"
+      width="500px"
+      height="500px"
+      name="marco"
+      frameborder="1"
+      title="la pagina de imagenes"
+    ></iframe>
+    <p>
+      <a href="./12imagenes.html" target="marco" title="la pagina imagenes"
+        >Enlace que llena el iframe</a
+      >
+    </p>
+  </body>
+</html>

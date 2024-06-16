@@ -1,0 +1,33 @@
+<!-- Se recomienda utilizar rutas de archivos relativas (si es posible).        
+Al utilizar rutas de archivo relativas, sus páginas web no estarán vinculadas a su URL base actual. Todos los enlaces funcionarán en su propia computadora (localhost), así como en su dominio público actual y en sus dominios públicos futuros. -->
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <!-- rutas absolutas -->
+    <img
+      src="https://img.freepik.com/foto-gratis/colores-arremolinados-interactuan-danza-fluida-sobre-lienzo-que-muestra-tonos-vibrantes-patrones-dinamicos-que-capturan-caos-belleza-arte-abstracto_157027-2892.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718409600&semt=sph"
+      alt="Imagenes"
+      title="es una ruta absoluta"
+    />
+    <br />
+
+    <!-- rutas de archivo relativas -->
+    <img src="favicon.ico" alt="favicon" />
+    <br />
+    <!-- apunta a la raiz de la web actual -->
+    <img src="/favicon.ico" alt="" />
+    <br />
+    <!-- apunta a una carpeta ubicada en la carpeta actual -->
+    <img
+      src="imagenes/favicon.ico"
+      alt="como no existe la carpetano saldra nada"
+    />
+    <br />
+    <!-- apunta a una carpeta o archivo un nivel arriba de la carpeta actual -->
+    <img
+      src="../css/index.html"
+      alt="no sale nada porque no existe el archivo"
+    />
+  </body>
+</html>
