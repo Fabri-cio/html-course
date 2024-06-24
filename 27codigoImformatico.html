@@ -1,7 +1,38 @@
+<!-- todo lo que se muestra es en una fuente monoespaciada -->
+<!-- El <kbd>elemento define la entrada del teclado.
+  El <samp>elemento define la salida de muestra de un programa informático.
+  El <code>elemento define un fragmento de código informático.
+  El <var>elemento define una variable en programación o en una expresión matemática.
+  El <pre>elemento define texto preformateado -->
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
+    <!-- para mostrar codigo fuente -->
     <code> x=5; y=6; z=x+y; </code>
+
+    <!-- para realizar una accion o comando especifico de una aplicacion o sitio web -->
+    <p>Para guardar el documento presiona <kbd>Ctrl + S</kbd></p>
+
+    <!-- salida de un programa o sistema despues de ejecutar un comando o una accion -->
+    <p>Mensaje de la computadora</p>
+    <p>
+      <samp>Archivo no encontrado.<br />Press F1 para continuar</samp>
+    </p>
+
+    <!-- code no considera espacios ni salto de linea para eso pre -->
+    <pre>
+      <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+      </code>
+    </pre>
+
+    <!-- var se utiliza para definer una variable en programacion o una exprecion matematica -->
+    <p>
+      El area de un triangulo es: 1/2 x <var>b</var> x <var>h</var>, donde
+      <var>b</var> es la base, y <var>h</var> es la altura vertical.
+    </p>
   </body>
 </html>

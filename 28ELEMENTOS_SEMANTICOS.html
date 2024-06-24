@@ -1,0 +1,211 @@
+<!-- elementos semanticos = elementos con un significado -->
+<!-- Una Web semántica permite compartir y reutilizar datos entre aplicaciones, empresas y comunidades -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .all-integrantes {
+        background-color: lightgray;
+        padding: 2px;
+        margin: 0;
+      }
+
+      .all-integrantes > h1,
+      .integrante {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .integrante {
+        background: white;
+      }
+
+      .integrante > h2,
+      p {
+        margin: 4px;
+        font-size: 90%;
+        text-align: justify;
+      }
+      aside {
+        background-color: lightgray;
+        width: 30%;
+        float: right;
+        padding-left: 15px;
+        margin-left: 15px;
+        font-style: italic;
+      }
+
+      li {
+        list-style: none;
+      }
+      main {
+        margin-bottom: 15px;
+      }
+
+      header {
+        background-color: lightgray;
+      }
+
+      footer {
+        background-color: lightgray;
+        margin-top: 15px;
+      }
+      footer > p,
+      address {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- el elemento hedaer representa un contenedor para contenido introductorio o conjunto de enlaces de navegacion -->
+    <!-- este elemento normalmente contiene
+    uno o mas encabezados h1 h6
+    logotipo o icono
+    Imformacion de autoria -->
+    <!-- nota no se puede poner header en footer, address o en otro header -->
+    <header>
+      <h1>Esta es mi Pagina</h1>
+
+      <!-- este elemento define un conjunto de enlaces de navegacion -->
+      <nav>
+        <ul>
+          <li><a href="#">La Paz</a></li>
+          <li><a href="#">Cochabamba</a></li>
+          <li><a href="#">Santa Cruz</a></li>
+          <li><a href="#">Tarija</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- define una seccion un un documento que es una agrupacion tematica de contenido normalmente con un encabezado-->
+      <!-- se puede utilizar en:
+    capitulos
+    Introduccion
+    Noticias
+    Imformacion del contacto -->
+      <section>
+        <header>
+          <h1>SOAD</h1>
+        </header>
+        <p>
+          System of a Down es una banda de rock estadounidense formada en 1994
+          en Glendale, California.Está formada por el vocalista Serj Tankian, el
+          guitarrista Daron Malakian, el bajista Shavo Odadjian y el baterista
+          John Dolmayan. Los miembros de la banda son de origen armenio.
+        </p>
+        <figure>
+          <img
+            src="https://www.lifeboxset.com/wp-content/uploads/2022/09/soad.png"
+            alt="SOAD"
+            style="width: 100%"
+          />
+          <figcaption>
+            Fig.1 - John Dolmayan, Serj Tankian, Daron Malakian, Shavo Odadjian
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- esta etiqueta especifica contenido autonomo, como ilustraciones, diagramas, fotografias, listados de codigos, etc. -->
+      <!-- figcaption define un titulo para el elemento figure puede ubicarse como el primero o el ultimo elemento -->
+
+      <!-- especifica contenido independiente y autonomo. Un artículo debe tener sentido por sí mismo y debe ser posible distribuirlo independientemente del resto del sitio web. -->
+      <!-- article se puede utilizar en: 
+      publicaciones en el foro
+      entradas de blog
+      comentarios del usuario
+      tarjetas de producto
+      articulos de producto -->
+      <article class="all-integrantes">
+        <header>
+          <h1>Integrantes de SOAD</h1>
+        </header>
+        <article class="integrante">
+          <header>
+            <h2>Serj Tankian</h2>
+          </header>
+          <p>
+            Serj Tankian es un músico armenio-estadounidense nacido en Líbano,
+            conocido principalmente por ser el vocalista, compositor y
+            cofundador de la banda System of a Down. Durante su carrera
+            artística, Tankian con System of a Down, ha lanzado cinco álbumes de
+            estudio.
+          </p>
+        </article>
+        <article class="integrante">
+          <header>
+            <h2>Daron Malakian</h2>
+          </header>
+          <p>
+            Daron Malakian es un músico estadounidense de origen armenio,
+            conocido por ser el guitarrista, compositor, segunda voz y
+            cofundador de la banda de rock System of a Down. Malakian también es
+            el vocalista, guitarrista, compositor y fundador de la banda Scars
+            on Broadway.
+          </p>
+        </article>
+        <article class="integrante">
+          <header>
+            <h2>Shavo Odadjian</h2>
+          </header>
+          <p>
+            Shavarsh Odadjian, más conocido como Shavo Odadjian, es un músico
+            armenio, conocido principalmente por ser el bajista de la banda
+            System of a Down.
+          </p>
+        </article>
+        <article class="integrante">
+          <header>
+            <h2>John Dolmayan</h2>
+          </header>
+          <p>
+            John Dolmayan es un músico estadounidense de ascendencia armenia,
+            conocido principalmente por ser el baterista de la banda System of a
+            Down. También posee un proyecto llamado These Grey Men lanzado en
+            2020.
+          </p>
+        </article>
+      </article>
+    </main>
+
+    <!-- este elemento define un elemento ademas del contenido en el que se coloca (como una barra lateral) -->
+    <!-- el contenido del aside debe estar relacionado indirectamente con el contenido circundante -->
+    <aside>
+      <p>
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+        las industrias desde el año 1500.
+      </p>
+    </aside>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus
+      amet similique consequuntur tempora sequi, dignissimos incidunt nisi fuga
+      eaque fugit fugiat, nobis vero quas harum minus earum iusto vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit amet
+      corporis quibusdam voluptates atque eos voluptatum non necessitatibus,
+      pariatur quis laudantium ea excepturi eligendi perspiciatis officia
+      tempora nam neque.
+    </p>
+
+    <!-- este elemento define un pie de pagina para un documento o seccion -->
+    <!-- este elemento normalmente contiene:
+    Imformacion de autoria
+    Imformacion registrada
+    Imformacion del contacto
+    Mapa del sitio
+    Volver a los enlaces superiores
+    Documentos relacionados -->
+    <!-- nota: podemos tener varios elementos footer en un documento -->
+    <footer>
+      <p><cite>Programador:</cite>William Fabricio Tito Vargas</p>
+      <address>
+        <p>
+          <a href="mailto:wil.fabri777@gmail.com">wil.fabri777@gmail.com</a>
+        </p>
+      </address>
+    </footer>
+  </body>
+</html>
