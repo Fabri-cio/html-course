@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+      header > h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Atributos de Formulario</h1>
+    </header>
+
+    <div>
+      <form
+        action="/28ELEMENTOS_SEMANTICOS.html"
+        target="_blank"
+        method="post"
+        autocomplete="on"
+        novalidate
+      >
+        <label for="fname">Primer Nombre:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Segundo Nombre:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <hr />
+
+    <h2>action</h2>
+    <p>
+      Si se omite <mark>action</mark> la accion se establece en la pagina actual
+    </p>
+
+    <hr />
+
+    <h2>target</h2>
+    <p>
+      el atributo <mark>target</mark> especifica donde mostrar la respuesta que
+      se recibe despues de enviar el formulario por defecto esta en
+      <mark>_self</mark> lo que significa que la respuesta se abrira en la
+      ventana actual
+    </p>
+
+    <hr />
+
+    <h2>method</h2>
+    <p>
+      el atributo <mark>method</mark> especifica el metodo HTTP que se utilizara
+      al enviar los datos del formulario
+    </p>
+    <p>
+      los datos de formulario se pueden enviar como variables URL con
+      <mark>method="get"br </mark> son parte de la URL<br />
+      o como transacciones posteriores HTTP con <mark>method="post"</mark> no
+      son parte de la URL
+    </p>
+    <p>el dato predeterminado es <mark>get</mark></p>
+    <hr />
+
+    <h2>autocomplete</h2>
+    <p>
+      permite a los navegadores completar automaticamente los valores de los
+      campos de formulario basandose en entradas anteriores de usuario
+      <mark>autocomplete="on, off"</mark>
+    </p>
+    <p>
+      tambien se puede aumentar a elementos individuales como
+      <mark>input, textarea y select</mark>
+    </p>
+
+    <hr />
+
+    <h2>novalidate</h2>
+    <p>
+      significa que cualquier validacion del lado del cliente como:
+      <mark>required, pattern, min max etc</mark> sera ignorada
+    </p>
+
+    <p>
+      el atributo <mark>novalidate</mark> desactiva la validacion automatica del
+      navegador en los formularios permitiendo a los desarrolladores la
+      validacion de los datos de entrada de manera personalizada
+    </p>
+  </body>
+</html>

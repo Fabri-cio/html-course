@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <header><h1>Elementos</h1></header>
+    <main>
+      <section>
+        <!-- define una lista desplegable -->
+        <header><h2>select</h2></header>
+        <p>
+          Para predefiner una seleccion utilizamos el atributo
+          <mark>selected </mark> en option
+        </p>
+        <p>para mostrar el numero de valores visibles es <mark>size</mark></p>
+        <p><mark>multiple</mark>para seleccionar mas de un valor</p>
+        <form action="#">
+          <label for="cars">Elige un auto:</label>
+          <select name="cars" id="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab" selected>Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+        </form>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- define un campo de entrada de varias lineas (un area de texto) -->
+        <header><h2>textarea</h2></header>
+        <article>
+          <p>
+            O tambien se puede definir el tamaño con
+            <mark>style width y height</mark>
+          </p>
+        </article>
+        <form action="#">
+          <label for="txtarea">Define un campo de entrada</label><br />
+          <textarea name="message" id="textarea" rows="10" cols="20">
+Aqui va el texto que quieres ingresar</textarea
+          ><br /><br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- define un boton en el que se puede hacer click -->
+        <header><h2>buttom</h2></header>
+        <p>especificar siempre el <mark>type</mark> de button</p>
+        <button type="button" onclick="alert('esto es al funcion de un boton')">
+          Presioname
+        </button>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- se utiliza para agrupar datos relacionados en un formulario y legend define un titulo para fieldset -->
+        <header><h2>fieldset - legend</h2></header>
+        <form action="#">
+          <fieldset>
+            <legend>Personal</legend>
+            <label for="fname">Primer Nombre</label><br />
+            <input type="text" id="fname" name="fname" value="William" /><br />
+            <label for="lname">Apellido</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value="Vargas"
+            /><br /><br />
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- especifica una lista de opciones predifinidas para un elemento input -->
+        <header><h2>datalist</h2></header>
+        <p>
+          debe haber el atributo <mark>list</mark> en input vinculado con el
+          <mark>id</mark> de datalist
+        </p>
+        <article>
+          <form action="#">
+            <input list="nav" name="nav" />
+            <datalist id="nav">
+              <option value="Edge"></option>
+              <option value="FireFox"></option>
+              <option value="Chrome"></option>
+              <option value="Opera"></option>
+              <option value="Safari"></option>
+            </datalist>
+            <input type="button" value="Enviar" />
+          </form>
+        </article>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- representa el resultado de un calculo (como el realizado por un script) -->
+        <header><h2>output</h2></header>
+        <article>
+          <form
+            action="#"
+            oninput="x.value=parseInt(a.value+parseInt(b.value))"
+          >
+            0 <input type="range" id="a" name="a" value="50" /> 100 +
+            <input type="number" id="b" name="b" value="50" /> =
+            <output name="x" for="a b"></output>
+            <br /><br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <input> -->
+      <!-- <label> -->
+      <!-- <select> -->
+      <!-- <textarea> -->
+      <!-- <button> -->
+      <!-- <fieldset> -->
+      <!-- <legend> -->
+      <!-- <datalist> -->
+      <!-- <output> -->
+      <!-- <option> -->
+      <!-- <optgroup> -->
+    </footer>
+  </body>
+</html>

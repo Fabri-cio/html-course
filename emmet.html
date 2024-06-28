@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- etiquetas basicas -->
+    <blockquote>bq</blockquote>
+    <header>hdr</header>
+    <footer>ftr</footer>
+    <button>btn</button>
+    <section>sect</section>
+
+    <!-- clases -->
+    <div class="content color">div.content.color</div>
+
+    <!-- ids -->
+    <div id="hero">div#hero</div>
+
+    <!-- conbinatoria -->
+    <div class="content" id="hero">div.content#hero</div>
+
+    <!-- atributos -->
+    <img src="cat.jpg" alt="gato" />img[src="cat.jpg"][alt="gato"]
+
+    <!-- contenido -->
+    <p>esto es un parrafo<strong>p{esto es un parrafo}>strong</strong></p>
+
+    <!-- etiquetas hermanos -->
+    <section>section+section</section>
+    <section></section>
+
+    <!-- etiquetas hijos -->
+    <article>
+      <p>article>p</p>
+    </article>
+
+    <!-- escalando trepando por las estructura html-->
+    <div>div*div>p>span+em^bq</div>
+    <div>
+      <p><span></span><em></em></p>
+      <blockquote></blockquote>
+    </div>
+
+    <!-- agrupar una alternativa a trepar -->
+    <div>
+      div>(header>ul>li>a)+ftr>p
+      <header>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </header>
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+
+    <!-- multiplicacion -->
+    <ul>
+      <li>ul>li*7</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- $numerando elementos en secuencia usando un signo de dolar $ -->
+    <ul>
+      ul>li{Item $}*3
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- ahora pad con ceros $$$ osea el valor del atributo class -->
+    <ul>
+      <li class="item001">ul>li.item$$$*5</li>
+      <li class="item002"></li>
+      <li class="item003"></li>
+      <li class="item004"></li>
+      <li class="item005"></li>
+    </ul>
+
+    <!-- comenzar con un numero especifico -->
+    <ul>
+      ul>li.item$@3*5
+      <li class="item3"></li>
+      <li class="item4"></li>
+      <li class="item5"></li>
+      <li class="item6"></li>
+      <li class="item7"></li>
+    </ul>
+
+    <!-- iverso -->
+    ul>li.item$@-*5
+    <ul>
+      <li class="item5"></li>
+      <li class="item4"></li>
+      <li class="item3"></li>
+      <li class="item2"></li>
+      <li class="item1"></li>
+    </ul>
+
+    <!-- nombres de etiquetas implicitos -->
+    .wrapper
+    <div class="wrapper"></div>
+
+    em>.enfasis
+    <em><span class="enfasis"></span></em>
+
+    ul>.item
+    <ul>
+      <li class="item"></li>
+    </ul>
+
+    table>.fila>.col
+    <table>
+      <tr class="fila">
+        <td class="col"></td>
+      </tr>
+    </table>
+
+    <!-- envolver etiquetas -->
+    F1 emmet: encapsular con abreviaturas
+    <!-- test     <div>test</div>   --->
+
+    <!--    Lorem*10      lorem10 -->
+
+    <!-- poniendolo todo junto -->
+    <ul class="mi-lista">
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+        eos.
+      </li>
+      <li>
+        Consequatur neque cupiditate, minus officiis explicabo ipsum ullam iste
+        esse.
+      </li>
+      <li>
+        Unde eligendi aliquam dicta natus enim possimus corporis ad ullam?
+      </li>
+      <li>
+        Debitis voluptatibus consequatur labore non? Alias iusto earum harum
+        facilis.
+      </li>
+      <li>
+        Praesentium soluta recusandae aut, libero ab eos maiores corrupti
+        inventore!
+      </li>
+    </ul>
+  </body>
+</html>
